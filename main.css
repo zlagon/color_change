@@ -1,0 +1,28 @@
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h1{
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+.button {
+    margin-left: 100px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid red;
+    background-color : greenyellow;
+    cursor: pointer;
+
+}
+
+.button:active{
+    opacity: 0.6;
+}

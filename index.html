@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear gradient</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+   <div class="box">
+    <h1>   LAGON_Z</h1>
+    <label for="favcolor">Select your favorite color:</label>
+    <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+    <label for="favcolor1"></label>
+    <input type="color" id="favcolor1" name="favcolor1" value="#ff0000">
+    <button class="button" onclick="chang()">CLICK</button>
+    
+   </div>
+    <script >
+        let color1 = chang()
+        let color2 = chang()
+document.body.style.background = `linear-gradient(to left, ${color1}, ${color2})`
+    function chang(){
+    let color1 = document.getElementById('favcolor1').value;
+    let color2 = document.getElementById('favcolor').value;
+    document.body.style.background = `linear-gradient(to left, ${color1}, ${color2})`
+   
+    }
+    </script>
+</body>
+</html>
